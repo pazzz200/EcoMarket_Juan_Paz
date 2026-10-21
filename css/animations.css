@@ -1,0 +1,37 @@
+/* =========================================
+   ANIMACIONES BRO
+   Transiciones y animaciones (keyframes)
+   ========================================= */
+
+/* Transiciones: hacen que los cambios sean suaves */
+.nav a,
+.footer-columna a {
+  transition: all 0.3s ease;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Al pasar el mouse la tarjeta se eleva */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Animacion de entrada del texto del banner */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1,
+.hero p {
+  animation: aparecer 1s ease;
+}

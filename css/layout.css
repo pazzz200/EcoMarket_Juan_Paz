@@ -1,0 +1,159 @@
+/* =========================================
+   Header, hero, secciones, grid y footer
+   (Mobile First: primero celular, luego pantallas grandes)
+   ========================================= */
+
+/* ---------- HEADER ---------- */
+.header {
+  background-color: var(--negro-suave);
+  border-bottom: 2px solid var(--dorado);
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--dorado);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav a {
+  font-weight: bold;
+  color: var(--texto-suave);
+}
+
+.nav a:hover {
+  color: var(--dorado);
+}
+
+.header-iconos {
+  display: flex;
+  gap: 15px;
+  font-size: 1.3rem;
+}
+
+/* ---------- HERO (banner principal) ---------- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(135deg, var(--negro), var(--dorado-oscuro));
+  background-size: cover;
+  background-position: center;
+  color: var(--texto);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* ---------- PRODUCTOS DESTACADOS ---------- */
+.destacados {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destacados h2 {
+  text-align: center;
+  color: var(--dorado);
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+/* Grid: 1 columna en celular */
+.grid-productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: var(--negro-suave);
+  border-top: 2px solid var(--dorado);
+  color: var(--texto);
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-columna h4 {
+  color: var(--dorado);
+  margin-bottom: 5px;
+}
+
+.footer-columna a:hover {
+  color: var(--dorado);
+}
+
+.copy {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+}
+
+/* ---------- TABLET (desde 768px) ---------- */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero {
+    padding: 120px 40px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .copy {
+    width: 100%;
+  }
+}
+
+/* ---------- COMPUTADOR (desde 1024px) ---------- */
+@media (min-width: 1024px) {
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
