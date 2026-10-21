@@ -5,14 +5,14 @@
 
 /* ---------- HEADER ---------- */
 .header {
-  background-color: var(--negro-suave);
-  border-bottom: 2px solid var(--dorado);
+  background-color: var(--principal);
+  border-bottom: 2px solid var(--acento);
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -21,7 +21,7 @@
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: var(--dorado);
+  color: var(--acento);
 }
 
 .nav {
@@ -33,11 +33,11 @@
 
 .nav a {
   font-weight: bold;
-  color: var(--texto-suave);
+  color: var(--texto-claro);
 }
 
 .nav a:hover {
-  color: var(--dorado);
+  color: var(--acento);
 }
 
 .header-iconos {
@@ -49,10 +49,10 @@
 /* ---------- HERO (banner principal) ---------- */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    linear-gradient(135deg, var(--negro), var(--dorado-oscuro));
+    linear-gradient(135deg, var(--principal), var(--principal-claro));
   background-size: cover;
   background-position: center;
-  color: var(--texto);
+  color: var(--texto-claro);
   text-align: center;
   padding: 80px 20px;
 }
@@ -76,7 +76,7 @@
 
 .destacados h2 {
   text-align: center;
-  color: var(--dorado);
+  color: var(--principal);
   font-size: 1.8rem;
   margin-bottom: 30px;
 }
@@ -90,9 +90,9 @@
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background-color: var(--negro-suave);
-  border-top: 2px solid var(--dorado);
-  color: var(--texto);
+  background-color: var(--principal);
+  border-top: 2px solid var(--acento);
+  color: var(--texto-claro);
   padding: 40px 20px 20px;
   display: flex;
   flex-direction: column;
@@ -106,12 +106,12 @@
 }
 
 .footer-columna h4 {
-  color: var(--dorado);
+  color: var(--acento);
   margin-bottom: 5px;
 }
 
 .footer-columna a:hover {
-  color: var(--dorado);
+  color: var(--acento);
 }
 
 .copy {

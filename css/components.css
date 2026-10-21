@@ -5,40 +5,41 @@
 /* ---------- BOTON ---------- */
 .btn {
   display: inline-block;
-  background-color: var(--negro);
-  color: var(--dorado);
-  border: 2px solid var(--dorado);
+  background-color: var(--principal);
+  color: var(--texto-claro);
+  border: 2px solid var(--acento);
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: bold;
 }
 
 .btn:hover {
-  background-color: var(--dorado);
-  color: var(--negro);
+  background-color: var(--acento);
+  color: var(--principal);
 }
 
 /* ---------- TARJETA DE PRODUCTO ---------- */
 .card {
-  background-color: var(--negro-suave);
-  border: 1px solid var(--gris-oscuro);
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   text-align: center;
   padding-bottom: 20px;
 }
 
 .card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background-color: var(--gris-oscuro);
+  height: 220px;
+  object-fit: contain;
+  background-color: var(--superficie);
+  padding: 10px;
 }
 
 .card h3 {
   margin: 15px 15px 5px;
-  color: var(--dorado);
+  color: var(--principal);
 }
 
 .card p {

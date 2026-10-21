@@ -16,7 +16,7 @@
 /* Al pasar el mouse la tarjeta se eleva */
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 10px 20px rgba(31, 42, 68, 0.2);
 }
 
 /* Animacion de entrada del texto del banner */
