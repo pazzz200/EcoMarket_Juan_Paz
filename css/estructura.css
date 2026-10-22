@@ -195,3 +195,127 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* =========================================
+   PAGINA SOBRE NOSOTROS
+   ========================================= */
+
+.nosotros {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Historia: texto centrado */
+.historia {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.historia-texto h1 {
+  color: var(--principal);
+  margin-bottom: 15px;
+}
+
+.historia-texto p {
+  color: var(--texto-suave);
+  margin-bottom: 12px;
+}
+
+.seccion-nosotros {
+  margin-bottom: 60px;
+}
+
+.seccion-nosotros h2 {
+  text-align: center;
+  color: var(--principal);
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+/* Principios y valores: 1 columna en celular */
+.principios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Carrusel: fila que se desliza de lado y se "acomoda" en cada tarjeta */
+.carrusel-ayuda {
+  text-align: center;
+  color: var(--texto-suave);
+  margin: -20px 0 20px;
+}
+
+.carrusel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0 15px;
+}
+
+.testimonio {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .principios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonio {
+    flex-basis: 45%;
+  }
+}
+
+/* Computador */
+@media (min-width: 1024px) {
+  .principios {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonio {
+    flex-basis: 31%;
+  }
+}
+
+/* =========================================
+   PAGINA DE CONTACTO
+   ========================================= */
+
+.contacto {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contacto h1 {
+  color: var(--principal);
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.contacto-intro {
+  text-align: center;
+  color: var(--texto-suave);
+  margin: 10px 0 30px;
+}
+
+/* Celular: formulario arriba e info abajo */
+.contacto-columnas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Tablet y computador: formulario ancho e info angosta al lado */
+@media (min-width: 768px) {
+  .contacto-columnas {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
