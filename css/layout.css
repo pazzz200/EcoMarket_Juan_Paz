@@ -18,10 +18,14 @@
   z-index: 10;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: var(--fondo);
+/* El logo es cuadrado con mucho blanco alrededor:
+   con object-fit: cover lo recortamos para que solo se vea el dibujo */
+.logo img {
+  width: 160px;
+  height: 60px;
+  object-fit: cover;
+  background-color: var(--superficie);
+  border-radius: 10px;
 }
 
 .nav {
@@ -51,8 +55,6 @@
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     linear-gradient(135deg, var(--principal), var(--acento));
-  background-size: cover;
-  background-position: center;
   color: var(--texto-claro);
   text-align: center;
   padding: 80px 20px;
