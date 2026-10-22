@@ -15,7 +15,7 @@
 
 .btn:hover {
   background-color: var(--acento);
-  color: var(--principal);
+  color: var(--texto);
 }
 
 /* ---------- TARJETA DE PRODUCTO ---------- */
@@ -46,4 +46,60 @@
   margin: 0 15px 15px;
   color: var(--texto-suave);
   font-size: 0.95rem;
+}
+
+/* ---------- BUSCADOR ---------- */
+.buscador {
+  display: flex;
+  background-color: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.buscador:focus-within {
+  border-color: var(--acento);
+}
+
+.buscador input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.buscador button {
+  border: none;
+  background-color: var(--principal);
+  padding: 0 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* ---------- TARJETA DEL CATALOGO ---------- */
+.card .precio {
+  color: var(--principal);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Etiqueta de stock */
+.etiqueta {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.disponible {
+  background-color: #e3f6ea;
+  color: var(--principal);
+}
+
+.agotado {
+  background-color: #f6e3e3;
+  color: #a33a3a;
 }

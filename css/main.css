@@ -4,12 +4,11 @@
 
 /* Variables: guardamos los colores para reusarlos */
 :root {
-  --principal: #1f2a44;       /* azul marino */
-  --principal-claro: #34446b; /* azul marino mas claro */
-  --acento: #c9a96e;          /* dorado champana */
-  --fondo: #f8f5f0;           /* crema */
+  --principal: #27ae60;       /* verde oscuro (requerimiento) */
+  --acento: #2ecc71;          /* verde claro (requerimiento) */
+  --fondo: #f5f5dc;           /* beige (requerimiento) */
   --superficie: #ffffff;      /* blanco para tarjetas */
-  --borde: #e6e0d6;
+  --borde: #dfe6cf;
   --texto: #2b2b2b;
   --texto-suave: #6b6b6b;
   --texto-claro: #f8f5f0;     /* texto sobre fondo oscuro */
@@ -39,6 +38,12 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Los campos y botones usan la misma fuente de la pagina */
+input,
+button {
+  font-family: inherit;
 }
 
 img {
