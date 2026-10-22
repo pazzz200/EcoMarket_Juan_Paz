@@ -35,7 +35,7 @@
   }
 }
 
-.hero h1,
-.hero p {
+.banner h1,
+.banner p {
   animation: aparecer 1s ease;
 }

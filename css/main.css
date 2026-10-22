@@ -42,6 +42,7 @@ a {
 
 /* Los campos y botones usan la misma fuente de la pagina */
 input,
+textarea,
 button {
   font-family: inherit;
 }

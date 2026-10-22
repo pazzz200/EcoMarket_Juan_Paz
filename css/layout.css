@@ -1,5 +1,5 @@
 /* =========================================
-   Header, hero, secciones, vitrinas y footer
+   Header, secciones, vitrinas y footer
    (Mobile First: primero celular, luego pantallas grandes)
    ========================================= */
 
@@ -51,8 +51,8 @@
   font-size: 1.3rem;
 }
 
-/* ---------- HERO (banner principal) ---------- */
-.hero {
+/* ---------- BANNER PRINCIPAL ---------- */
+.banner {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     linear-gradient(135deg, var(--principal), var(--acento));
   color: var(--texto-claro);
@@ -60,12 +60,12 @@
   padding: 80px 20px;
 }
 
-.hero h1 {
+.banner h1 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.hero p {
+.banner p {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
@@ -131,11 +131,11 @@
     justify-content: space-between;
   }
 
-  .hero {
+  .banner {
     padding: 120px 40px;
   }
 
-  .hero h1 {
+  .banner h1 {
     font-size: 3rem;
   }
 
